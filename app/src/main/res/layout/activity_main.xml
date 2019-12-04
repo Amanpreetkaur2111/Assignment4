@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/food"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/meals"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/food"
+        android:inputType="number"
+        android:id="@+id/price"
+        android:padding="10dp"
+        android:hint="price of the choosen meal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/quantity"
+        android:layout_below="@+id/price"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"
+        android:layout_below="@+id/quantity"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar"
+        android:id="@+id/seekbarperc">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10%"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15%"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20%"/>
+
+
+   </RadioGroup>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Total Price"
+           android:id="@+id/edit"
+           android:layout_below="@+id/seekbarperc"
+           />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

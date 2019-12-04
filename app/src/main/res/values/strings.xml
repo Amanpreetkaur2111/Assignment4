@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Assignment4</string>
+    
+    <string-array name="meals">
+        <item> Burger</item>
+        <item> Pizza</item>
+        <item> Fries</item>
+        <item> Pasta</item>
+        <item> Chocolate</item>
+        <item> Doritos</item>
+        <item> Chicken</item>
+        <item> Lobster</item>
+        <item> Rice</item>
+        <item> Sandwich</item>
+
+    </string-array>
+    <string-array name ="food_prices">
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>60</item>
+        <item>40</item>
+        <item>80</item>
+        <item>90</item>
+        <item>55</item>
+        <item>77</item>
+    </string-array>
+</resources>
